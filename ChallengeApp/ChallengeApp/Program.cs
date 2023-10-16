@@ -18,7 +18,7 @@ else if (sex != "M" && sex != "K")
 {
     Console.WriteLine(name + ", proszę określ swoją płeć przez wpisanie do zmiennej płeć (ang. sex) M - dla mężczyzny i K - dla kobiety.");
 }
-else if (true)
+else
 // nie wiedziałem ze VS mi dopisze (true) jako wartość i tym sposobem (przypadkiem) zalatwiłem sobie ostatni ogólny warunek
 {
     Console.WriteLine("Wymagana większa liczba warunków weryfikacji danych");
