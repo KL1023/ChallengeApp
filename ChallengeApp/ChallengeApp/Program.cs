@@ -1,24 +1,24 @@
-﻿string name = "Ewa";
-int age = 15;
-string sex = "M";
+﻿int[] grades = new int[365];
 
-if (name == "Ewa" && age == 33 && sex == "K")
+List <string> daysOfWeek = new List<string>();
+daysOfWeek.Add("Poniedziałek");
+daysOfWeek.Add("Wtorek");
+daysOfWeek.Add("Środa");
+daysOfWeek.Add("Czwartek");
+daysOfWeek.Add("Piątek");
+daysOfWeek.Add("Sobota");
+daysOfWeek.Add("Niedziela");
+//Console.WriteLine(daysOfWeek[2]);
+
+//string[] daysOfWeek2 = { "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela" };
+//Console.WriteLine(daysOfWeek2[0]);
+
+for(int i = 0; i<daysOfWeek.Count; i++)
 {
-    Console.WriteLine(name + ", lat " + age);
+    Console.WriteLine(daysOfWeek[i]);
 }
-else if (sex == "K" && age < 30)
+
+foreach (var day in daysOfWeek)
 {
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-else if (sex == "M" && age < 18)
-{
-    Console.WriteLine("Niepełnoletni mężczyzna. (Czy " + name + " to imię męskie?)");
-}
-else if (sex != "M" && sex != "K")
-{
-    Console.WriteLine(name + ", proszę określ swoją płeć przez wpisanie do zmiennej płeć (ang. sex) M - dla mężczyzny i K - dla kobiety.");
-}
-else
-{
-    Console.WriteLine("Wymagana większa liczba warunków weryfikacji danych");
+    Console.WriteLine(day);
 }
